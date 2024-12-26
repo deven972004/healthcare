@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Appointment</title>
+  <link rel="stylesheet" href="book-appointment.css">
+</head>
+<body>
+
+  <header>
+    <h1>Book an Appointment</h1>
+    <button onclick="logout()">Logout</button>
+  </header>
+
+  <main>
+    <section>
+      <h2>Select Doctor</h2>
+      <select id="doctor-select">
+        <option value="">--Select Doctor--</option>
+        <option value="Dr. John Doe">Dr. John Doe</option>
+        <option value="Dr. Emily Johnson">Dr. Emily Johnson</option>
+        <option value="Dr. Michael Brown">Dr. Michael Brown</option>
+        <option value="Dr. David Green">Dr. David Green</option>
+      </select>
+    </section>
+
+    <section>
+      <h2>Select Appointment Date and Time</h2>
+      <input type="date" id="appointment-date" required>
+      <input type="time" id="appointment-time" required>
+    </section>
+
+    <section>
+      <button onclick="bookAppointment()">Book Appointment</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Healthcare Dashboard</p>
+  </footer>
+
+  <script src="book-appointment.js"></script>
+
+</body>
+</html>

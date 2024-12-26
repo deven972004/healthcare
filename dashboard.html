@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Healthcare Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+  <header>
+    <h1>Healthcare Dashboard</h1>
+    <button onclick="logout()">Logout</button>
+  </header>
+
+  <main>
+    <section>
+      <h2>Select a Disease</h2>
+      <select id="disease-select" onchange="showDoctors()">
+        <option value="">--Choose a Disease--</option>
+        <option value="covid">COVID-19</option>
+        <option value="diabetes">Diabetes</option>
+        <option value="heart">Heart Disease</option>
+        <option value="cancer">Cancer</option>
+      </select>
+    </section>
+
+    <section id="doctor-suggestions" style="display: none;">
+      <h2>Suggested Doctors</h2>
+      <ul id="doctor-list">
+        <!-- Dynamically populated doctor list will appear here -->
+      </ul>
+      <button onclick="goToAppointmentPage()">Book an Appointment</button>
+    </section>
+
+    <section id="precautions-section" class="hidden">
+      <h2>Health Precautions</h2>
+      <p id="precautions-info">Select a disease to see precautions.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Healthcare Dashboard</p>
+  </footer>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

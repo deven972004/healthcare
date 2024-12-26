@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+h1 {
+    color: #007bff;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #333;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.error {
+    color: red;
+    margin-top: 10px;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+header button:hover {
+    background-color: #ff1a1a;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+select, button {
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #e8e8e8;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+    }
+
+    header button {
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .container {
+        max-width: 90%;
+        margin: 20px auto;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin-top: 10px;
+    }
+
+    form {
+        margin-top: 20px;
+    }
+
+    input {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+
+    ul li {
+        font-size: 0.9rem;
+    }
+}
+
+/* For very small screens (e.g., mobile phones) */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.2rem;
+        margin-top: 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    input, button {
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+    ul li {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Appointment</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Book an Appointment</h1>
+    <form id="appointment-form">
+      <input type="text" id="doctor-name" placeholder="Doctor's Name" required readonly />
+      <input type="date" id="appointment-date" required />
+      <select id="time-slot">
+        <option value="">--Select Time Slot--</option>
+        <option value="10:00 AM">10:00 AM</option>
+        <option value="11:00 AM">11:00 AM</option>
+        <option value="12:00 PM">12:00 PM</option>
+      </select>
+      <button type="submit">Book Appointment</button>
+    </form>
+    <p id="appointment-message"></p>
+    <button onclick="goBack()">Back to Dashboard</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
